@@ -1,6 +1,8 @@
 namespace Lab4;
 
-public class Figure
+// Объявляем абстрактный класс Figure
+public abstract class Figure
 {
-    
+    // Объявляем абстрактный метод CalculateArea, который должен быть реализован в дочерних классах
+    public abstract double CalculateArea();
 }
