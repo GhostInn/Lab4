@@ -26,8 +26,11 @@ public class Program
         figures.Add(new Triangle() { A = 9, B = 12, C = 15 });
 
         // Описываем запрос Линка (LINQ), который будет группировать элементы коллекции по их типу (Треугольник или Прямоугольник)
-        var query = from figure in figures
-            group figure by figure.GetType();
+        var query = 
+            from figure
+                in figures
+            group figure
+                by figure.GetType();
 
         // Запускаем запрос и получаем результат
         var result = query.ToList();
